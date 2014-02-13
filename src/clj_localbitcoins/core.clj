@@ -23,10 +23,6 @@
                             }
                      }))
 
-; (defn buy-bitcoins-online [country-code country-name payment-method]
-;   (let [base-url (:base (:urls @defaults))]
-;     (format "%s%s%s%s%s/.json" base-url country-code country-name payment-method)))
-
 (defn callback [{:keys [status headers body error opts] :as response}]
   (if error 
     (throw (Exception. (format "Failed, error: %s" error)))
@@ -35,7 +31,7 @@
       (throw (Exception. response)))))
 
 (defn api-call [options url & [method]]
-  (println url)
+  ;(println url)
   (case method 
     :get (http/get url options callback)
     :post (http/post url options callback)
