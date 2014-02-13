@@ -62,7 +62,6 @@ user=> @(get-payment-methods)
 
 ; with country code argument
 user=> @(get-payment-methods "JP")
-https://localbitcoins.com/api/payment_methods/JP/
 {:methods {:moneybookers-skrill {:code "MONEYBOOKERS", :name "Moneybookers / Skrill"}, :moneygram {:code "MONEYGRAM", :name "Moneygram"}, :western-union {:code "WU", :name "Western Union"}, :neteller {:code "NETELLER", :name "Neteller"}, :egopay {:code "EGOPAY", :name "EgoPay"}, :transferwise {:code "TRANSFERWISE", :name "Transferwise"}, :webmoney {:code "WEBMONEY", :name "WebMoney"}, :international-wire-swift {:code "INTERNATIONAL_WIRE_SWIFT", :name "International Wire (SWIFT)"}, :perfect-money {:code "PERFECT_MONEY", :name "Perfect Money"}, :okpay {:code "OKPAY", :name "OKPay"}, :ukash {:code "UKASH", :name "Ukash"}, :cashu {:code "CASHU", :name "CashU"}, :payza {:code "PAYZA", :name "Payza"}, :paypal {:code "PAYPAL", :name "Paypal"}}, :method_count 14}
 ```
 
