@@ -15,6 +15,13 @@ The following functions are available:
 - (get-payment-methods)
 - (get-online-ads)
 
+
+### REPL
+
+```Clojure
+(use 'clj-localbitcoins.core)
+```
+
 ### (get-currencies)
 
 Returns valid currencies for use on Localbitcoins.
